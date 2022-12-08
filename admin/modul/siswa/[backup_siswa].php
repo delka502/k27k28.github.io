@@ -51,7 +51,7 @@ if (isset($_POST['edit'])) {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img src="<?= url() ?>vendors/img/icon2big.png">
+      <img src="<?= url() ?>vendors/img/logo1.png">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -73,7 +73,7 @@ if (isset($_POST['edit'])) {
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav hidden-xs">
-      <img src="<?= url() ?>vendors/img/icon2big.png">
+      <img src="<?= url() ?>vendors/img/logo1.png">
       <ul class="nav nav-pills nav-stacked">
         <li><a href="index.php?m=awal">Dashboard</a></li>
        
@@ -96,7 +96,7 @@ if (isset($_POST['edit'])) {
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Tambah data admin</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Tambah data mahasiswa</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

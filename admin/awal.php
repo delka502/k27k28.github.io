@@ -54,13 +54,13 @@ foreach (summon_admin() as $adm):
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img src="<?= url() ?>vendors/img/icon2big.png">
+      <img src="<?= url() ?>vendors/img/logo1.png">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php?m=awal">Dashboard</a></li>
 
-        <li><a href="index.php?m=siswa&s=awal">Siswa</a></li>
+        <li><a href="index.php?m=siswa&s=awal">Mahasiswa</a></li>
         <li><a href="index.php?m=kelas&s=awal">Kelas</a></li>
         <li><a href="index.php?m=tabungan&s=awal">Tabungan</a></li>
         <li><a href="logout.php">Logout</a></li>
@@ -97,7 +97,7 @@ foreach (summon_admin() as $adm):
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav hidden-xs">
-      <img src="<?= url() ?>vendors/img/icon2big.png">
+      <img src="<?= url() ?>vendors/img/logo1.png">
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="index.php?m=awal"><i class="fa fa-diamond" aria-hidden="true"></i>
 Dashboard</a></li>
@@ -124,7 +124,7 @@ Tabungan</a></li>
 <!--       <div class="row">
         <div class="col-sm-3">
           <div class="well">
-            <h4>Jumlah Siswa</h4>
+            <h4>Jumlah Mahaiswa</h4>
             <p><?php jumlah_siswa();  ?></p> 
           </div>
         </div>
@@ -283,105 +283,10 @@ Tabungan</a></li>
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity" data-toggle="modal" data-target="#exampleModalCenterFB"></i>
-    <i class="fa fa-github w3-hover-opacity" data-toggle="modal" data-target="#exampleModalCenterGIT"></i>
-    <i class="fa fa-whatsapp w3-hover-opacity" data-toggle="modal" data-target="#exampleModalCenterWA"></i>
-   
-    <i class="fa fa-linkedin w3-hover-opacity" data-toggle="modal" data-target="#exampleModalCenterLIN"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p class="text-muted" style="font-size: 16px;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Muhamad Zibran Fitadiyatama All rights reserved</p>
+  <p class="text-muted" style="font-size: 16px;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Kultur 27 & Kultur 28 All rights reserved</p>
 
 </footer>
-    <!-- FACEBOOK -->
-    <div class="modal fade" id="exampleModalCenterFB" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <strong>FACEBOOK</strong><br>
-       <p><a href="https://www.facebook.com/zibran.vitadiyatama.7/" target="_blank">https://www.facebook.com/zibran.vitadiyatama.7/</a></p>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
-      </div>
-       
-    </div>
-  </div>
-</div>
-</div>
-    <!-- GITHUB -->
- <div class="modal fade" id="exampleModalCenterGIT" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <strong>GITHUB</strong><br>
-       <p><a href="https://github.com/ZibranovSky" target="_blank">https://github.com/ZibranovSky</a></p>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
-      </div>
-       
-    </div>
-  </div>
-</div>
-</div>
-  <!-- WHATSAPP -->
- <div class="modal fade" id="exampleModalCenterWA" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <strong>WHATSAPP</strong><br>
-       <p>0895-6357-29348</p>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
-      </div>
-       
-    </div>
-  </div>
-</div>
-</div>
-  <!-- LINKEDIN -->
-   <div class="modal fade" id="exampleModalCenterLIN" tabindex="-1" role="dialog"  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <strong>LINKEDIN</strong><br>
-       <p><a href="https://www.linkedin.com/in/muhammad-zibran-fitadiyatama-6550801a9/" target="_blank">https://www.linkedin.com/in/muhammad-zibran-fitadiyatama-6550801a9/</a></p>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-
-      </div>
-       
-    </div>
-  </div>
-</div>
-</div>
+  
   <script src="<?= url() ?>vendors/jquery/jquery.min.js"></script>
   <script src="<?= url() ?>vendors/js/bootstrap.min.js"></script> </body>
 </html>

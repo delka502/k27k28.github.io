@@ -1,11 +1,11 @@
 <?php 
 // KONEKSI-------------------------------------------------------------------------
 
-// $koneksi = mysqli_connect('localhost', 'root', '', 'tabungan_siswa');
+// $koneksi = mysqli_connect('localhost', 'root', '', 'tabungan_mahasiswa');
 
 
 $servername = "localhost";
-$database = "tabungan_siswa";
+$database = "tabungan_mahasiswa";
 $username = "root";
 $password = "";
 
@@ -21,7 +21,7 @@ if (!$koneksi) {
 
 //URL-----------------------------------------------------------
 function url(){
-	return $url = "//localhost/tabungan-siswa-master/";
+	return $url = "//localhost/tabungan/";
 }
 
 //SUMMON ADMIN
@@ -149,7 +149,7 @@ function update_admin(){
 	}
 }
 
-//SELECT SISWA
+//SELECT MAHASISWA
 function select_siswa(){
 	global $koneksi;
 	return mysqli_query($koneksi, "SELECT * FROM tb_siswa ORDER BY id DESC");
@@ -158,7 +158,7 @@ function select_siswa(){
 
 }
 
-// HAPUS SISWA
+// HAPUS MAHASISWA
 function hapus_siswa(){
 	global $koneksi;
 	$id = $_POST['id'];
@@ -166,7 +166,7 @@ function hapus_siswa(){
 	return mysqli_query($koneksi, $query);
 }
 
-// INSERT SISWA
+// INSERT MAHASISWA
 function insert_siswa(){
 	global $koneksi;
 
@@ -181,7 +181,7 @@ function insert_siswa(){
  
 }
 
-// EDIT SISWA
+// EDIT MAHASISWA
 function edit_siswa(){
 	global $koneksi;
 
@@ -193,7 +193,7 @@ function edit_siswa(){
 
 	return mysqli_query($koneksi, "UPDATE tb_siswa SET nama='$nama', kelas='$kelas', alamat='$alamat', notlp='$notlp' WHERE id='$id'");
 }
-//JUMLAH SISWA
+//JUMLAH MAHASISWA
 function jumlah_siswa()
 {
 global $koneksi;
@@ -272,7 +272,7 @@ function insert_setoran_awal(){
 	$tanggal = $_POST['tanggal'];
 	$saldo = $_POST['saldo'];
 
-	// Cek apakah id siswa ada
+	// Cek apakah id mahasiswa ada
 	$tambah = mysqli_query($koneksi, "SELECT * FROM tb_tabungan WHERE id_siswa='$id'");
 	$row = mysqli_fetch_row($tambah);
 
@@ -309,7 +309,7 @@ function tambah_setoran(){
 	// Penambahan saldo
 	$tambah_saldo = $saldo + $setoran;
 
-	//cek id siswa
+	//cek id mahasiswa
 	$tambah = mysqli_query($koneksi, "SELECT * FROM tb_tabungan WHERE id_siswa='$id_siswa'");
 	$row = mysqli_fetch_row($tambah);
 

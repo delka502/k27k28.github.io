@@ -1,5 +1,5 @@
 <?php 
-$koneksi = mysqli_connect('localhost', 'root', '', 'tabungan_siswa');
+$koneksi = mysqli_connect('localhost', 'root', '', 'tabungan_mahasiswa');
 global $koneksi;
 
 $batas = 5;

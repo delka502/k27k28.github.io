@@ -19,7 +19,7 @@ require 'fungsi/fungsi.php';
 		<div class="container">
 			<div class="jumbotron">
 				<center>
-					<img src="<?= url() ?>vendors/img/icon2big.png"> <b>&nbsp Tabungan Siswa</b>
+					<img src="<?= url() ?>vendors/img/logo1.png"> <b>&nbsp Tabungan Siswa</b>
 				</center>
 			</div>
 		</div>

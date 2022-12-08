@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tabungan_siswa`
+-- Database: `tabungan_mahasiswa`
 --
 
 -- --------------------------------------------------------
@@ -41,7 +41,7 @@ CREATE TABLE `tb_admin` (
 --
 
 INSERT INTO `tb_admin` (`id`, `username`, `password`, `nama`, `telepon`, `foto`) VALUES
-(34, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Admin Tabungan', '0001', '937-pendidikan.png');
+(34, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Admin Tabungan', '0001', 'orang.png');
 
 -- --------------------------------------------------------
 
